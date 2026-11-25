@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveZone - Jogos de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <h1>Drive<span>Zone</span></h1>
+            <p>Seu espaço para conhecer jogos de carros.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="apresentacao">
+            <h2>Bem-vindo ao DriveZone!</h2>
+            <p>Aqui você pode conhecer categorias de jogos de carros, pesquisar jogos e guardar seus favoritos.</p>
+        </section>
+
+        <section class="secao">
+            <h2>Categorias de jogos</h2>
+            <p>Conheça alguns estilos de jogos de carros.</p>
+            <div id="listaCategorias" class="grade-categorias"></div>
+            <p id="mensagemCategorias" class="mensagem"></p>
+        </section>
+
+        <section class="secao">
+            <h2>O que observar em um jogo?</h2>
+            <div class="grade-informacoes">
+                <article class="cartao-informacao">
+                    <h3>Gráficos</h3>
+                    <p>Os gráficos deixam os carros e as pistas mais bonitos.</p>
+                </article>
+                <article class="cartao-informacao">
+                    <h3>Controles</h3>
+                    <p>Os controles ajudam o jogador a dirigir o carro.</p>
+                </article>
+                <article class="cartao-informacao">
+                    <h3>Personalização</h3>
+                    <p>Alguns jogos permitem modificar os carros.</p>
+                </article>
+            </div>
+            <button id="botao" type="button">Ver mais</button>
+            <p id="mensagem" class="mensagem"></p>
+        </section>
+
+        <section class="secao">
+            <h2>Pesquisar jogos</h2>
+            <p>Digite o nome de um jogo para ver informações sobre ele.</p>
+            <form id="formBusca">
+                <label for="termoBusca">Nome do jogo:</label>
+                <div class="linha-busca">
+                    <input type="text" id="termoBusca" placeholder="Ex.: Forza Horizon 5">
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+            <p id="mensagemBusca" class="mensagem"></p>
+            <div id="resultadosApi" class="grade-jogos"></div>
+            <p class="credito-api">Informações e imagens fornecidas por <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a>.</p>
+        </section>
+
+        <section class="secao">
+            <h2>Cadastro de jogos</h2>
+            <p>Você também pode cadastrar um jogo manualmente.</p>
+            <form id="formularioJogo">
+                <div class="campo">
+                    <label for="nomeJogo">Nome do jogo:</label>
+                    <input type="text" id="nomeJogo" placeholder="Ex.: Need for Speed">
+                </div>
+                <div class="campo">
+                    <label for="categoriaJogo">Categoria:</label>
+                    <input type="text" id="categoriaJogo" placeholder="Ex.: Corrida">
+                </div>
+                <button type="submit">Cadastrar jogo</button>
+            </form>
+            <p id="mensagemCadastro" class="mensagem"></p>
+            <h3 class="subtitulo">Jogos cadastrados</h3>
+            <ul id="listaJogos" class="lista-cadastrados"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Drive<span>Zone</span></h2>
+            <p>Feito para quem gosta de jogos de carros.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

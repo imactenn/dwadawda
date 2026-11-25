@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "nome": "Corrida",
+            "descricao": "Jogos com velocidade, ultrapassagens e competições."
+        },
+        {
+            "nome": "Drift",
+            "descricao": "Jogos focados em derrapagens e manobras com carros."
+        },
+        {
+            "nome": "Simulação",
+            "descricao": "Jogos que tentam reproduzir a direção de forma realista."
+        }
+    ]
+}

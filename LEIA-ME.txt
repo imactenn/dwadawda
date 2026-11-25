@@ -1,0 +1,28 @@
+DRIVEZONE - VERSAO SIMPLES
+
+ARQUIVOS
+- index.html: estrutura da página.
+- styles.css: aparência da página.
+- script.js: funções do projeto.
+- categorias.json: categorias lidas com fetch().
+- config.js: chave da API RAWG.
+
+COMO TESTAR
+1. Abra a pasta no Visual Studio Code.
+2. Abra o arquivo index.html com Live Server.
+3. Para pesquisar jogos, coloque sua chave RAWG no arquivo config.js.
+
+O QUE FOI UTILIZADO
+- fetch() para ler o arquivo categorias.json.
+- fetch() para pesquisar jogos na API RAWG.
+- JSON para ler os dados recebidos.
+- querySelector e querySelectorAll para selecionar elementos da página.
+- for para repetir ações.
+- if e else para verificar condições.
+- classList.add() e classList.remove() para mudar as mensagens.
+
+IMPORTANTE
+Não publique uma chave real da API em um repositório público. O arquivo config.js fica visível para outras pessoas. Para manter a chave protegida em um site público, é necessário usar um servidor/backend.
+
+CRÉDITO
+As informações e imagens dos jogos pesquisados são fornecidas pela RAWG.
